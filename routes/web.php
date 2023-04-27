@@ -16,23 +16,27 @@ use App\Models\Listing;
 |
 */
 
+
+// Most common Routes:
+// index - show all listings
+// show - single listing
+// create - create a listing
+// store - store a listing
+// edit - show form to edit listing
+// update - update listing
+// destroy - delete listing
+
+// All listings
 Route::get('/', [ListingController::class, 'index']);
+
+// Show create Listing
+Route::get('/listings/create', [ListingController::class, 'create']);
+
+// Store new listing
+Route::post('/listings', [ListingController::class, 'store']);
+
 
 // Single listing
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
-// Route::get('/hello', function () {
-//     // return 'LARAVEL LARAVEL';
-//     return response("<h1>yoyoyo</h1>",200)
-//     ->header('COntent-Type', 'text/plain')
-//     ->header('foo', 'bar');
-// });
 
-// Route::get('/posts/{id}', function($id){
-//     // ddd($id);
-//     return response('Post' . $id);
-// })->where('id', '[0-9]+');
-
-// Route::get('/search', function(Request $request){
-//     return $request->name . ' ' . $request->age;
-// });
