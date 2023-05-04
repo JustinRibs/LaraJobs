@@ -3,7 +3,8 @@
         <div class="absolute top-4 left-3">
             <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
         </div>
-        <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search Laravel Gigs..." />
+        <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
+            placeholder="Search Laravel Gigs..." />
         <div class="absolute top-2 right-2">
             <button type="submit" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">
                 Search
@@ -12,4 +13,7 @@
     </div>
 </form>
 
-<div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
+
+{{-- took 2 hours to find this accidental div screwing up the layout. rip my entire afternoon --}}
+
+{{-- <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4"> --}}
