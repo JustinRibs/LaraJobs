@@ -88,10 +88,11 @@ class ListingController extends Controller
     }
 
     // show manage form
-    public function manage(Listing $listing) {
-        return view('listings.manage', [
-            'listing' => $listing,
-        ]);
+    public function manage() {
+        // return view('listings.manage', [
+        //     'listing' => $listing,
+        // ]);
+        return view('listings.manage');
     }
 
 }

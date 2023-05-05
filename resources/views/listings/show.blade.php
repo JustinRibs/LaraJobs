@@ -38,7 +38,7 @@
             </div>
         </x-card>
         <x-card class="mt-4 p-2 flex space-x-6">
-            @if (auth()->user()->id === $listing->user_id)
+            @if (auth()->check())
                 <a href="/listings/{{ $listing->id }}/edit">
                     <i class="p-2 fa-solid fa-pencil"> Edit</i>
                 </a>
